@@ -1,0 +1,230 @@
+{
+  "nav": {
+    "home": "Home",
+    "structure": "Structure",
+    "services": "Services",
+    "short_rental": "Short Rental",
+    "bookings": "Bookings"
+  },
+  "home_page": {
+    "hero": {
+      "title": "Welcome to Betta47",
+      "subtitle": "Your peaceful refuge in the heart of the city",
+      "cta": "Book Now"
+    },
+    "sections": {
+      "comfort": {
+        "title": "Comfort and Quality",
+        "shortDescription": "Spacious and comfortable rooms with all modern comforts for a relaxing stay.",
+        "expandedContent": "Our rooms have been designed with your comfort in mind. Every detail is taken care of to offer you an unforgettable stay experience. From premium quality sheets to orthopedic pillows, everything is selected to ensure maximum relaxation. Individual air conditioning allows you to adjust the temperature according to your preferences, while the studied lighting creates the perfect atmosphere for every moment of the day."
+      },
+      "location": {
+        "title": "Strategic Location",
+        "shortDescription": "Located in a central position, easily accessible and close to main points of interest.",
+        "expandedContent": "Our strategic location allows you to easily reach all the main points of interest in the city. Within a few minutes walk you will find typical restaurants, shops, museums and tourist attractions. Public transport is easily accessible, allowing you to explore the city in complete comfort. Furthermore, the area is well served and safe, ideal for evening walks and enjoying the local nightlife."
+      },
+      "experience": {
+        "title": "Unique Experience",
+        "shortDescription": "A personalized stay experience that will make you feel at home.",
+        "expandedContent": "At Betta47 we don't just offer a place to sleep, but a complete experience. Our staff is always available to advise you on the best restaurants, attractions to visit and activities to do in the area. We also organize special events and themed dinners to introduce you to local culture and traditions. Our philosophy is to create a family environment where every guest feels special and welcome."
+      },
+      "events": {
+        "title": "Events and Activities",
+        "shortDescription": "We organize special events and activities to make your stay even more memorable.",
+        "expandedContent": "During your stay you can participate in numerous events and activities organized by our staff. From themed dinners with typical local dishes to guided city tours, from wine tasting evenings to cultural activities, there's always something special to do. We also organize seasonal events such as neighborhood parties, craft markets and musical shows. All events are included in the stay price and represent a unique opportunity to immerse yourself in local culture."
+      }
+    },
+    "gallery": {
+      "title": "Discover Our Beauty",
+      "subtitle": "A taste of our structure through images"
+    }
+  },
+  "structure_page": {
+    "hero": {
+      "title": "Our Structure",
+      "subtitle": "Discover the environments that make your stay special"
+    },
+    "gallery": {
+      "title": "Complete Gallery",
+      "subtitle": "Explore all the environments of our structure"
+    }
+  },
+  "services_page": {
+    "title": "Our Services",
+    "subtitle": "Discover all the services that make your stay an unforgettable experience",
+    "comfort_rooms": {
+      "title": "Comfortable Rooms",
+      "description": "Spacious and comfortable rooms with all the comforts necessary for a relaxing stay.",
+      "features": ["Double or single bed", "Quality linen", "Air conditioning", "Heating"]
+    },
+    "wifi": {
+      "title": "Free Wi-Fi",
+      "description": "High-speed internet connection available throughout the structure.",
+      "features": ["Fast connection", "Available 24/7", "Complete coverage"]
+    },
+    "tv": {
+      "title": "TV in Every Room",
+      "description": "Modern television in every room for your entertainment.",
+      "features": ["Smart HD TV", "National and international channels", "Streaming available"]
+    },
+    "essential_services": {
+      "title": "Essential Services",
+      "description": "All essential services for a comfortable stay.",
+      "features": ["Hair dryer available", "Private parking", "Laundry use for long stays"]
+    },
+    "premium_services": {
+      "title": "Premium Services",
+      "description": "Additional services to make your stay even more special.",
+      "features": ["Breakfast included", "Cleaning service", "24/7 assistance"]
+    },
+    "security": {
+      "title": "Security and Cleanliness",
+      "description": "Maximum attention to security and cleanliness for your peace of mind.",
+      "features": ["Daily cleaning", "Certified disinfectants", "Security checks"]
+    },
+    "additional_services": {
+      "title": "Additional Services",
+      "subtitle": "Extra services to make your stay even more special",
+      "flexible_checkin": {
+        "title": "Flexible Check-in",
+        "description": "Personalized check-in times"
+      },
+      "groups": {
+        "title": "Groups",
+        "description": "Special discounts for large groups"
+      },
+      "personalized": {
+        "title": "Personalized Services",
+        "description": "Request custom services"
+      },
+      "local_experiences": {
+        "title": "Local Experiences",
+        "description": "Tips to discover the area"
+      }
+    },
+    "cta": {
+      "title": "Ready for an Unforgettable Stay?",
+      "subtitle": "Book now and enjoy all our quality services",
+      "button": "Book Now"
+    }
+  },
+  "short_rental_page": {
+    "hero": {
+      "title": "Short Rental",
+      "subtitle": "Comfortable apartments for short and long stays"
+    },
+    "gallery": {
+      "title": "Apartments Gallery",
+      "subtitle": "Images of our available apartments"
+    },
+    "features": {
+      "title": "Main Features",
+      "list": [
+        "Completely independent apartment",
+        "Equipped kitchen",
+        "Spacious living room",
+        "Comfortable bedroom",
+        "Private bathroom",
+        "Free Wi-Fi",
+        "Parking included"
+      ]
+    },
+    "services": {
+      "title": "Included Services",
+      "subtitle": "Everything you need for a perfect stay",
+      "independent": {
+        "title": "Independent Apartment",
+        "description": "Complete privacy and autonomy during your stay"
+      },
+      "kitchen": {
+        "title": "Equipped Kitchen",
+        "description": "Everything you need to prepare your meals"
+      },
+      "wifi": {
+        "title": "Free Wi-Fi",
+        "description": "High-speed internet connection"
+      },
+      "parking": {
+        "title": "Parking Included",
+        "description": "Free and secure parking space"
+      },
+      "cleaning": {
+        "title": "Cleaning Service",
+        "description": "Weekly cleaning included in the price"
+      },
+      "support": {
+        "title": "24/7 Assistance",
+        "description": "Continuous support for any need"
+      }
+    },
+    "cta": {
+      "title": "Ready for Your Experience?",
+      "subtitle": "Discover all our services and book your unforgettable stay",
+      "button": "Book Apartment"
+    },
+    "comparison": {
+      "title": "B&B vs Short Rental",
+      "subtitle": "Choose the option that best suits your needs",
+      "bnb": {
+        "title": "Traditional B&B",
+        "features": [
+          "Breakfast included",
+          "Concierge service",
+          "Daily cleaning",
+          "Family atmosphere"
+        ]
+      },
+      "apartment": {
+        "title": "Short Rental",
+        "features": [
+          "Complete independence",
+          "Equipped kitchen",
+          "Weekly cleaning",
+          "Absolute privacy"
+        ]
+      }
+    }
+  },
+  "prenotazioni_page": {
+    "title": "Bookings",
+    "subtitle": "Book your unforgettable stay",
+    "form": {
+      "personal_info": "Personal Information",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "stay_info": "Stay Information",
+      "check_in": "Check-in Date",
+      "check_out": "Check-out Date",
+      "guests": "Number of Guests",
+      "room_type": "Room Type",
+      "single": "Single",
+      "double": "Double",
+      "triple": "Triple",
+      "suite": "Suite",
+      "apartment": "Apartment",
+      "additional_services": "Additional Services",
+      "breakfast": "Breakfast",
+      "parking": "Parking",
+      "cleaning": "Cleaning Service",
+      "pets": "Pets",
+      "note": "Special Notes",
+      "privacy": "I accept the processing of personal data",
+      "submit": "Send Booking"
+    }
+  },
+  "footer": {
+    "description": "Your peaceful refuge in the heart of the city, where comfort and quality meet to offer you an unforgettable stay experience.",
+    "contact": "Contact",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "quick_links": "Quick Links",
+    "about": "About Us",
+    "services": "Services",
+    "gallery": "Gallery",
+    "bookings": "Bookings",
+    "social": "Follow Us",
+    "rights": "All rights reserved"
+  }
+}

@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  # Frontend React - Betta47 B&B
+  betta47-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: betta47_frontend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+    volumes:
+      - frontend_build:/app/dist
+    networks:
+      - web-proxy
+
+volumes:
+  frontend_build:
+    driver: local
+
+networks:
+  web-proxy:
+    external: true
