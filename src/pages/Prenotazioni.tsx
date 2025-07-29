@@ -26,8 +26,6 @@ const Prenotazioni = () => {
     alert('Prenotazione inviata! (controlla la console per i dati)');
   };
 
-  const dataArrivo = watch('data_arrivo');
-
   return (
     <div className="min-h-screen p-4 md:p-8 bg-neutral-light">
       <div className="max-w-4xl mx-auto bg-white p-4 md:p-8 rounded-lg shadow-md">

@@ -198,7 +198,6 @@ const Header = () => {
                 {/* Language Selector Mobile */}
                 <div className="pt-4 border-t border-neutral-light">
                   <div className="flex items-center space-x-2 mb-3">
-                    <HiGlobe className="w-5 h-5 text-neutral-dark" />
                     <span className="font-lato font-medium text-neutral-dark">Lingua / Language</span>
                   </div>
                   <div className="space-y-2">

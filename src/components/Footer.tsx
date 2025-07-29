@@ -1,44 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { 
-  HiMail, 
-  HiPhone, 
-  HiLocationMarker, 
-  HiGlobe,
-  HiMap
-} from 'react-icons/hi';
+import { HiPhone, HiMail, HiLocationMarker, HiGlobe } from 'react-icons/hi';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const { t } = useTranslation();
-
-  const socialLinks = [
-    {
-      name: 'Facebook',
-      icon: FaFacebook,
-      href: 'https://facebook.com',
-      color: 'hover:text-blue-600'
-    },
-    {
-      name: 'Twitter',
-      icon: FaTwitter,
-      href: 'https://twitter.com',
-      color: 'hover:text-blue-400'
-    },
-    {
-      name: 'Maps',
-      icon: HiMap,
-      href: 'https://maps.google.com',
-      color: 'hover:text-red-500'
-    },
-    {
-      name: 'Email',
-      icon: HiMail,
-      href: 'mailto:info@betta47.com',
-      color: 'hover:text-accent'
-    }
-  ];
 
   return (
     <footer className="bg-primary text-white">

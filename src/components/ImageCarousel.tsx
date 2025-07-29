@@ -1,11 +1,12 @@
-import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
+import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
+import { useRef } from 'react';
 
 interface ImageCarouselProps {
   images: string[];
@@ -22,7 +23,7 @@ const ImageCarousel = ({
   showOverlay = true,
   className = ""
 }: ImageCarouselProps) => {
-  const { t } = useTranslation();
+  const swiperRef = useRef<SwiperType | null>(null);
 
   return (
     <div className={`relative ${className}`}>
@@ -45,6 +46,9 @@ const ImageCarousel = ({
         }}
         loop={true}
         className="w-full h-full"
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+        }}
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
@@ -81,13 +85,13 @@ const ImageCarousel = ({
       </Swiper>
 
       {/* Custom Navigation Buttons */}
-      <button className="swiper-button-prev absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10  rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm">
+      <button className="swiper-button-prev absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 bg-black/30 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm hover:bg-black/50">
         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
 
-      <button className="swiper-button-next absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10  rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm">
+      <button className="swiper-button-next absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 bg-black/30 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm hover:bg-black/50">
         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
@@ -100,29 +104,29 @@ const ImageCarousel = ({
             key={index}
             className="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-300"
             onClick={() => {
-              const swiper = document.querySelector('.swiper')?.swiper;
-              if (swiper) {
-                swiper.slideTo(index);
+              if (swiperRef.current) {
+                swiperRef.current.slideTo(index);
               }
             }}
           />
         ))}
       </div>
 
-      <style jsx>{`
-        .swiper-pagination-bullet {
-          background: rgba(255, 255, 255, 0.5);
-          opacity: 1;
-        }
-        .swiper-pagination-bullet-active {
-          background: #C4A663;
-        }
-        .swiper-button-next,
-        .swiper-button-prev {
-          color: white;
-        }
-        
-      `}</style>
+      <style>
+        {`
+          .swiper-pagination-bullet {
+            background: rgba(255, 255, 255, 0.5);
+            opacity: 1;
+          }
+          .swiper-pagination-bullet-active {
+            background: #C4A663;
+          }
+          .swiper-button-next,
+          .swiper-button-prev {
+            color: white;
+          }
+        `}
+      </style>
     </div>
   );
 };
