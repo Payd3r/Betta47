@@ -15,23 +15,23 @@
     "sections": {
       "comfort": {
         "title": "Comfort e Qualità",
-        "shortDescription": "Camere spaziose e confortevoli con tutti i comfort moderni per un soggiorno rilassante.",
-        "expandedContent": "Le nostre camere sono state progettate pensando al vostro comfort. Ogni dettaglio è curato per offrirvi un'esperienza di soggiorno indimenticabile. Dalle lenzuola di qualità premium ai cuscini ortopedici, tutto è selezionato per garantire il massimo relax. La climatizzazione individuale vi permette di regolare la temperatura secondo le vostre preferenze, mentre l'illuminazione studiata crea l'atmosfera perfetta per ogni momento della giornata."
+        "shortDescription": "Camere spaziose, luminose e dotate di tutti i comfort essenziali per un soggiorno piacevole",
+        "expandedContent": "Le nostre camere sono dotate di tutti i comfort:\n- Bagno privato\n- TV in ogni camera\n- Wi-Fi gratuito\n- Telefono\n- Uso lavatrice per soggiorni lunghi\n\nOgni camera dispone di ingresso indipendente, con possibilità di scegliere tra letto matrimoniale, due letti singoli o l'aggiunta di un terzo letto. Il silenzio e la privacy sono garantiti grazie alla posizione tranquilla e al parcheggio interno privato."
       },
       "location": {
         "title": "Posizione Strategica",
-        "shortDescription": "Situato in una posizione centrale, facilmente raggiungibile e vicino ai principali punti di interesse.",
-        "expandedContent": "La nostra posizione strategica vi permette di raggiungere facilmente tutti i principali punti di interesse della città. A pochi minuti a piedi troverete ristoranti tipici, negozi, musei e attrazioni turistiche. I mezzi pubblici sono facilmente accessibili, permettendovi di esplorare la città in tutta comodità. Inoltre, la zona è ben servita e sicura, ideale per passeggiate serali e per godersi la vita notturna locale."
+        "shortDescription": "Il B&B si trova nella zona più panoramica e residenziale di Cantù, con vista aperta e massima tranquillità",
+        "expandedContent": "Una base perfetta per esplorare: \n- Como e il Lago (15 min), \n- Milano e le sue fiere (30–40 min), \n- Monza e il suo autodromo (30 min), \n- Lugano (Svizzera) (40 min). \nAltri posti utili nei dintorni dell'appartamento:\n- 5 minuti dall'Ospedale di Cantù \n- 15 min dall'Ospedale S. Anna di Como \n- 5 km dall'università eCampus di Novedrate."
       },
-      "experience": {
-        "title": "Esperienza Unica",
-        "shortDescription": "Un'esperienza di soggiorno personalizzata che vi farà sentire come a casa vostra.",
-        "expandedContent": "Al Betta47 non offriamo solo un posto dove dormire, ma un'esperienza completa. Il nostro staff è sempre disponibile per consigliarvi sui migliori ristoranti, attrazioni da visitare e attività da fare in zona. Organizziamo anche eventi speciali e cene tematiche per farvi conoscere la cultura e le tradizioni locali. La nostra filosofia è quella di creare un ambiente familiare dove ogni ospite si senta speciale e benvenuto."
+      "relax": {
+        "title": "Relax e Natura",
+        "shortDescription": "Il B&B è circondato da un giardino privato di 1.500 mq, perfetto per chi cerca quiete e relax",
+        "expandedContent": "L'unica area comune è una cucina ampia dove viene servita la colazione. \nPet Friendly – Gli amici a quattro zampe sono i benvenuti!"
       },
-      "events": {
-        "title": "Eventi e Attività",
-        "shortDescription": "Organizziamo eventi speciali e attività per rendere il vostro soggiorno ancora più memorabile.",
-        "expandedContent": "Durante il vostro soggiorno potrete partecipare a numerosi eventi e attività organizzati dal nostro staff. Dalle cene tematiche con piatti tipici locali ai tour guidati della città, dalle serate di degustazione vini alle attività culturali, c'è sempre qualcosa di speciale da fare. Organizziamo anche eventi stagionali come feste di quartiere, mercatini artigianali e spettacoli musicali. Tutti gli eventi sono inclusi nel prezzo del soggiorno e rappresentano un'occasione unica per immergersi nella cultura locale."
+      "short_rental": {
+        "title": "Affitto Breve – Bilocale",
+        "shortDescription": "Per chi ha necessità di soggiorni medio-lunghi (da 1 a 18 mesi), offriamo anche un bilocale attrezzato a soli 800 m dal B&B",
+        "expandedContent": "Situato in un contesto condominiale tranquillo. Piano rialzato, ideale per 1–2 persone adulte. Completamente arredato e con utenze incluse: acqua, luce, riscaldamento, spese condominiali. \nBen collegato con Como e i principali servizi (bus, bar, scuole, tabacchi)."
       }
     },
     "gallery": {

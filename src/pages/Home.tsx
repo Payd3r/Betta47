@@ -33,17 +33,58 @@ const Home = () => {
       image: '/img/dove_siamo2.jpg'
     },
     {
-      id: 'experience',
+      id: 'relax',
       image: '/img/eventi1.jpg'
     },
     {
-      id: 'events',
+      id: 'short_rental',
       image: '/img/eventi2.jpeg'
     }
   ];
 
   const toggleSection = (sectionId: string) => {
     setExpandedSection(expandedSection === sectionId ? null : sectionId);
+  };
+
+  // Funzione per renderizzare il contenuto con supporto per elenchi puntati
+  const renderContent = (content: string) => {
+    // Se il contenuto contiene elenchi puntati (linee che iniziano con -)
+    if (content.includes('-')) {
+      const lines = content.split('\n');
+      return (
+        <div className="space-y-2">
+          {lines.map((line, index) => {
+            const trimmedLine = line.trim();
+            if (trimmedLine.startsWith('-')) {
+              // È un elemento dell'elenco puntato
+              return (
+                <div key={index} className="flex items-start space-x-2">
+                  <span className="text-primary font-bold mt-1">•</span>
+                  <span className="text-base font-lato text-neutral-dark leading-relaxed">
+                    {trimmedLine.substring(1).trim()}
+                  </span>
+                </div>
+              );
+            } else if (trimmedLine) {
+              // È testo normale
+              return (
+                <p key={index} className="text-base font-lato text-neutral-dark leading-relaxed">
+                  {trimmedLine}
+                </p>
+              );
+            }
+            return null;
+          })}
+        </div>
+      );
+    }
+    
+    // Se non ci sono elenchi puntati, renderizza come testo normale
+    return (
+      <p className="text-base font-lato text-neutral-dark leading-relaxed">
+        {content}
+      </p>
+    );
   };
 
   return (
@@ -102,9 +143,7 @@ const Home = () => {
                       className="overflow-hidden"
                     >
                       <div className="space-y-4 pt-4 border-t border-neutral-dark/20">
-                        <p className="text-base font-lato text-neutral-dark leading-relaxed">
-                          {t(`home_page.sections.${section.id}.expandedContent`)}
-                        </p>
+                        {renderContent(t(`home_page.sections.${section.id}.expandedContent`))}
                       </div>
                     </motion.div>
                   )}
@@ -213,9 +252,7 @@ const Home = () => {
                       className="overflow-hidden"
                     >
                       <div className="space-y-4 pt-4 border-t border-neutral-dark/20">
-                        <p className="text-base font-lato text-neutral-dark leading-relaxed">
-                          {t(`home_page.sections.${section.id}.expandedContent`)}
-                        </p>
+                        {renderContent(t(`home_page.sections.${section.id}.expandedContent`))}
                       </div>
                     </motion.div>
                   )}

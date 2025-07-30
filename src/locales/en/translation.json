@@ -15,23 +15,23 @@
     "sections": {
       "comfort": {
         "title": "Comfort and Quality",
-        "shortDescription": "Spacious and comfortable rooms with all modern comforts for a relaxing stay.",
-        "expandedContent": "Our rooms have been designed with your comfort in mind. Every detail is taken care of to offer you an unforgettable stay experience. From premium quality sheets to orthopedic pillows, everything is selected to ensure maximum relaxation. Individual air conditioning allows you to adjust the temperature according to your preferences, while the studied lighting creates the perfect atmosphere for every moment of the day."
+        "shortDescription": "Spacious, bright rooms equipped with all essential comforts for a pleasant stay",
+        "expandedContent": "Our rooms are equipped with all comforts:\n- Private bathroom\n- TV in every room\n- Free Wi-Fi\n- Telephone\n- Laundry use for long stays\n\nEach room has independent access, with the possibility to choose between double bed, two single beds or adding a third bed. Silence and privacy are guaranteed thanks to the quiet location and private internal parking."
       },
       "location": {
         "title": "Strategic Location",
-        "shortDescription": "Located in a central position, easily accessible and close to main points of interest.",
-        "expandedContent": "Our strategic location allows you to easily reach all the main points of interest in the city. Within a few minutes walk you will find typical restaurants, shops, museums and tourist attractions. Public transport is easily accessible, allowing you to explore the city in complete comfort. Furthermore, the area is well served and safe, ideal for evening walks and enjoying the local nightlife."
+        "shortDescription": "The B&B is located in the most panoramic and residential area of Cantù, with open views and maximum tranquility",
+        "expandedContent": "A perfect base to explore: \n- Como and the Lake (15 min)\n- Milan and its fairs (30–40 min)\n- Monza and its racetrack (30 min)\n- Lugano (Switzerland) (40 min).\nOther nearby places:\n- 5 minutes from Cantù Hospital \n- 15 min from S. Anna Hospital in Como\n- 5 km from eCampus University in Novedrate."
       },
-      "experience": {
-        "title": "Unique Experience",
-        "shortDescription": "A personalized stay experience that will make you feel at home.",
-        "expandedContent": "At Betta47 we don't just offer a place to sleep, but a complete experience. Our staff is always available to advise you on the best restaurants, attractions to visit and activities to do in the area. We also organize special events and themed dinners to introduce you to local culture and traditions. Our philosophy is to create a family environment where every guest feels special and welcome."
+      "relax": {
+        "title": "Relax and Nature",
+        "shortDescription": "The B&B is surrounded by a private 1,500 sqm garden, perfect for those seeking peace and relaxation",
+        "expandedContent": "The only common area is a large kitchen where breakfast is served. Pet Friendly – Four-legged friends are welcome!"
       },
-      "events": {
-        "title": "Events and Activities",
-        "shortDescription": "We organize special events and activities to make your stay even more memorable.",
-        "expandedContent": "During your stay you can participate in numerous events and activities organized by our staff. From themed dinners with typical local dishes to guided city tours, from wine tasting evenings to cultural activities, there's always something special to do. We also organize seasonal events such as neighborhood parties, craft markets and musical shows. All events are included in the stay price and represent a unique opportunity to immerse yourself in local culture."
+      "short_rental": {
+        "title": "Short Rental – Two-Room Apartment",
+        "shortDescription": "For those who need medium-long stays (from 1 to 18 months), we also offer a furnished two-room apartment just 800m from the B&B",
+        "expandedContent": "Located in a quiet condominium context. Raised floor, ideal for 1–2 adults. Completely furnished with utilities included: water, electricity, heating, condominium expenses. Well connected with Como and main services (bus, bar, schools, tobacco shops)."
       }
     },
     "gallery": {
