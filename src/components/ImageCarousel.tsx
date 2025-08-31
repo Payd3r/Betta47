@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import { useRef } from 'react';
+import OptimizedImage from './OptimizedImage';
 
 interface ImageCarouselProps {
   images: string[];
@@ -53,10 +54,11 @@ const ImageCarousel = ({
         {images.map((image, index) => (
           <SwiperSlide key={index}>
             <div className="relative w-full h-full">
-              <img
+              <OptimizedImage
                 src={image}
                 alt={`Slide ${index + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full"
+                priority={index === 0} // Prima immagine prioritaria
               />
               {showOverlay && (title || subtitle) && (
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center">

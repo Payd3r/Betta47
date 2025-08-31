@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiX, HiChevronLeft, HiChevronRight } from 'react-icons/hi';
+import OptimizedImage from './OptimizedImage';
 
 interface MasonryGalleryProps {
   images: string[];
@@ -59,10 +60,11 @@ const MasonryGallery = ({ images, className = "" }: MasonryGalleryProps) => {
             onClick={() => openLightbox(index)}
           >
             <div className="relative w-full h-full overflow-hidden">
-              <img
+              <OptimizedImage
                 src={image}
                 alt={`Gallery image ${index + 1}`}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full transition-transform duration-500 group-hover:scale-110"
+                priority={index < 4} // Prime 4 immagini prioritarie
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
                 <motion.div
@@ -120,10 +122,12 @@ const MasonryGallery = ({ images, className = "" }: MasonryGalleryProps) => {
               transition={{ duration: 0.3 }}
               className="relative max-w-4xl max-h-[90vh] mx-4"
             >
-              <img
+              <OptimizedImage
                 src={images[selectedImage]}
                 alt={`Lightbox image ${selectedImage + 1}`}
-                className="w-full h-full object-contain"
+                className="w-full h-full"
+                style={{ objectFit: 'contain' }}
+                priority={true}
               />
               
               {/* Image Counter */}

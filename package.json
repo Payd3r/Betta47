@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:analyze": "npm run build && npm run analyze:performance",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "analyze:performance": "node scripts/performance-analysis.js"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.11",

@@ -234,4 +234,41 @@
   .gallery-item:hover .gallery-image {
     transform: scale(1.1);
   }
+  
+  /* Loader personalizzato per OptimizedImage */
+  .border-3 {
+    border-width: 3px;
+  }
+
+  .image-loader {
+    background: linear-gradient(-45deg, #f1f5f9, #e2e8f0, #cbd5e1, #f1f5f9);
+    background-size: 400% 400%;
+    animation: gradient-shift 2s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Animazione pulsante per il loader */
+  .loader-pulse {
+    animation: loader-pulse 1.5s ease-in-out infinite;
+  }
+
+  @keyframes loader-pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
 }

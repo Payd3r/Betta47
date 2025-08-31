@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { useTranslation } from 'react-i18next';
+import OptimizedImage from './OptimizedImage';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +18,33 @@ const Header = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Preload delle immagini critiche dopo il mount
+  useEffect(() => {
+    // Immagini critiche di Betta47
+    const criticalImages = [
+      '/img/dove_siamo1.jpg',
+      '/img/dove_siamo2.jpg',
+      '/img/eventi1.jpg',
+      '/img/eventi2.jpeg',
+      '/img/dintorni1.jpg'
+    ];
+
+    // Preload delle immagini con priorità bassa
+    const preloadImages = () => {
+      criticalImages.forEach(src => {
+        const img = new Image();
+        img.src = src;
+      });
+    };
+
+    // Usa requestIdleCallback se disponibile, altrimenti setTimeout
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(preloadImages);
+    } else {
+      setTimeout(preloadImages, 1000);
+    }
   }, []);
 
   const toggleMenu = () => {
@@ -38,6 +66,27 @@ const Header = () => {
   ];
 
   const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
+
+  // Preload intelligente delle pagine al hover
+  const handleLinkHover = (href: string) => {
+    if (href !== location.pathname) {
+      // Mapping delle rotte di Betta47
+      const routeMap: Record<string, () => Promise<any>> = {
+        '/': () => import('../pages/Home'),
+        '/struttura': () => import('../pages/Struttura'),
+        '/servizi': () => import('../pages/Servizi'),
+        '/prenotazioni': () => import('../pages/Prenotazioni'),
+        '/affitto-breve': () => import('../pages/AffittoBreve')
+      };
+
+      const preloadFunc = routeMap[href];
+      if (preloadFunc) {
+        preloadFunc().catch(() => {
+          // Ignore preload errors
+        });
+      }
+    }
+  };
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -63,6 +112,7 @@ const Header = () => {
                 location.pathname === '/' ? 'text-secondary' : 'text-neutral-dark'
               }`}
               onClick={closeMenu}
+              onMouseEnter={() => handleLinkHover('/')}
             >
               {t('nav.home')}
             </Link>
@@ -72,6 +122,7 @@ const Header = () => {
                 location.pathname === '/struttura' ? 'text-secondary' : 'text-neutral-dark'
               }`}
               onClick={closeMenu}
+              onMouseEnter={() => handleLinkHover('/struttura')}
             >
               {t('nav.structure')}
             </Link>
@@ -81,6 +132,7 @@ const Header = () => {
                 location.pathname === '/servizi' ? 'text-secondary' : 'text-neutral-dark'
               }`}
               onClick={closeMenu}
+              onMouseEnter={() => handleLinkHover('/servizi')}
             >
               {t('nav.services')}
             </Link>
@@ -90,6 +142,7 @@ const Header = () => {
                 location.pathname === '/affitto-breve' ? 'text-secondary' : 'text-neutral-dark'
               }`}
               onClick={closeMenu}
+              onMouseEnter={() => handleLinkHover('/affitto-breve')}
             >
               {t('nav.short_rental')}
             </Link>
@@ -99,6 +152,7 @@ const Header = () => {
                 location.pathname === '/prenotazioni' ? 'text-secondary' : 'text-neutral-dark'
               }`}
               onClick={closeMenu}
+              onMouseEnter={() => handleLinkHover('/prenotazioni')}
             >
               {t('nav.bookings')}
             </Link>
@@ -107,7 +161,7 @@ const Header = () => {
             <div className="relative group">
               <button className="flex items-center space-x-2 font-lato font-medium text-neutral-dark hover:text-secondary transition-colors duration-300">
                 
-                <img src={currentLanguage.flag} alt={currentLanguage.name} className="w-5 h-3 hidden lg:block rounded-sm" />
+                <OptimizedImage src={currentLanguage.flag} alt={currentLanguage.name} className="w-5 h-3 hidden lg:block rounded-sm" priority={true} />
                 <span className="hidden lg:inline">{currentLanguage.name}</span>
               </button>
               
@@ -121,7 +175,7 @@ const Header = () => {
                       lang.code === i18n.language ? 'text-secondary font-medium' : 'text-neutral-dark'
                     }`}
                   >
-                    <img src={lang.flag} alt={lang.name} className="w-6 h-4 rounded-sm" />
+                    <OptimizedImage src={lang.flag} alt={lang.name} className="w-6 h-4 rounded-sm" priority={true} />
                     <span className="font-lato">{lang.name}</span>
                   </button>
                 ))}
@@ -211,7 +265,7 @@ const Header = () => {
                             : 'bg-neutral-light text-neutral-dark hover:bg-neutral-light/80'
                         }`}
                       >
-                        <img src={lang.flag} alt={lang.name} className="w-6 h-4 rounded-sm" />
+                        <OptimizedImage src={lang.flag} alt={lang.name} className="w-6 h-4 rounded-sm" priority={true} />
                         <span className="font-lato">{lang.name}</span>
                       </button>
                     ))}

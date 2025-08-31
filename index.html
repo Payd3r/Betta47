@@ -1,13 +1,65 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Betta47</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <meta name="description" content="Betta47 - B&B e Affitti Brevi a Palazzolo sull'Oglio. Soggiorna in comfort nel cuore della Lombardia con servizi di qualità e accoglienza familiare." />
+    <meta name="keywords" content="bed and breakfast, affitti brevi, Palazzolo sull'Oglio, Lombardia, turismo, soggiorno, vacanze" />
+    <meta name="author" content="Betta47" />
+    <title>Betta47 - B&B e Affitti Brevi a Palazzolo sull'Oglio</title>
+    
+    <!-- Preload delle risorse critiche -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" as="style" />
+    <link rel="preload" href="/vite.svg" as="image" />
+    
+    <!-- Preconnect per risorse esterne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Preload delle immagini critiche above-the-fold -->
+    <link rel="prefetch" href="/img/dove_siamo1.jpg" as="image" />
+    <link rel="prefetch" href="/img/eventi1.jpg" as="image" />
+    <link rel="prefetch" href="/img/italiano.jpg" as="image" />
+    <link rel="prefetch" href="/img/inglese.jpg" as="image" />
+    
+    <!-- Meta tag per SEO e social sharing -->
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Betta47 - B&B e Affitti Brevi a Palazzolo sull'Oglio" />
+    <meta property="og:description" content="Soggiorna in comfort nel cuore della Lombardia con servizi di qualità e accoglienza familiare." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://betta47.com" />
+    <meta property="og:image" content="/img/dove_siamo1.jpg" />
+    <meta property="og:locale" content="it_IT" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Betta47 - B&B e Affitti Brevi" />
+    <meta name="twitter:description" content="Soggiorna in comfort nel cuore della Lombardia" />
+    <meta name="twitter:image" content="/img/dove_siamo1.jpg" />
+    
+    <!-- Structured Data per Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BedAndBreakfast",
+      "name": "Betta47",
+      "description": "B&B e Affitti Brevi a Palazzolo sull'Oglio",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palazzolo sull'Oglio",
+        "addressRegion": "Lombardia",
+        "addressCountry": "IT"
+      },
+      "url": "https://betta47.com",
+      "telephone": "+39-xxx-xxx-xxxx",
+      "priceRange": "€€"
+    }
+    </script>
+    
+    <!-- Caricamento asincrono dei font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+    </noscript>
   </head>
   <body>
     <div id="root"></div>
