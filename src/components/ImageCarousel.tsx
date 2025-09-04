@@ -87,15 +87,15 @@ const ImageCarousel = ({
       </Swiper>
 
       {/* Custom Navigation Buttons */}
-      <button className="swiper-button-prev absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 bg-black/30 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm hover:bg-black/50">
-        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+      <button className="swiper-button-prev absolute left-4 top-1/2 transform -translate-y-1/2 z-10 p-2 transition-all duration-300 hover:scale-110">
+        <svg className="w-6 h-6 text-white drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
 
-      <button className="swiper-button-next absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 bg-black/30 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm hover:bg-black/50">
-        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+      <button className="swiper-button-next absolute right-4 top-1/2 transform -translate-y-1/2 z-10 p-2 transition-all duration-300 hover:scale-110">
+        <svg className="w-6 h-6 text-white drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
         </svg>
       </button>
 
